@@ -58,6 +58,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*Mixins*/
 @font-face {
+  font-family: 'Socialico';
+  src: url("../fonts/Socialico.eot");
+  src: url("../fonts/Socialico.eot?#iefix") format("embedded-opentype"), url("../fonts/Socialico.woff") format("woff"), url("../fonts/Socialico.ttf") format("truetype"), url("../fonts/Socialico.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Kiro Extra Light Italic';
   src: url("../fonts/Kiro Extra Light Italic.eot");
   src: url("../fonts/Kiro Extra Light Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Extra Light Italic.woff") format("woff"), url("../fonts/Kiro Extra Light Italic.ttf") format("truetype"), url("../fonts/Kiro Extra Light Italic.otf") format("opentype");
@@ -93,26 +100,283 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
 }
 body {
-  font-size: 14px;
   font-family: "Kiro Regular";
 }
 
-::-webkit-input-placeholder {
-  color: #999999;
+h1 {
+  font-size: 58px;
 }
 
-::-moz-placeholder {
-  color: #999999;
+.social {
+  font-family: "Socialico";
 }
-
-:-moz-placeholder {
-  color: #999999;
+.social a {
+  font-size: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
-
-:-ms-input-placeholder {
-  color: #999999;
+.social a:hover {
+  color: #79d7f8;
 }
 
 /* Components */
-/* Layout related stylesheets* */
+/* Layout */
+.header-holder {
+  color: #ffffff;
+  background: #e3e3e3;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 30px solid #d0dae4;
+}
+.header-holder.header-2 {
+  background-image: url(../img/bg/header2.jpg);
+}
+.header-top {
+  padding: 12px 0;
+  background: rgba(31, 184, 228, 0.8);
+  border-top: 6px solid rgba(17, 115, 148, 0.8);
+}
+.header-top:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-top .logo {
+  float: left;
+  padding-top: 7px;
+  margin-right: 32px;
+  position: relative;
+}
+.header-top .logo:before {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 17px;
+  right: -20px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #ffffff;
+}
+.header-top .logo-description {
+  float: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-top: 6px;
+}
+.header-top .logo-description span {
+  font-size: 10px;
+  display: block;
+}
+.header-top .social {
+  float: right;
+}
+.header-top .social a {
+  display: inline-block;
+  padding: 0 4px;
+  margin: 0 3px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.header-top .social a:hover {
+  border-color: #79d7f8;
+}
+.header-search {
+  float: right;
+  margin-right: 40px;
+  margin-top: 5px;
+  color: #000000;
+  width: 260px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+.header-search:after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.header-search ::-webkit-input-placeholder {
+  color: #1d3b54;
+}
+.header-search ::-moz-placeholder {
+  color: #1d3b54;
+}
+.header-search :-moz-placeholder {
+  color: #1d3b54;
+}
+.header-search :-ms-input-placeholder {
+  color: #1d3b54;
+}
+.header-search input[type="text"] {
+  float: left;
+  height: 100%;
+  width: calc(100% - 30px);
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "Kiro Bold";
+  font-size: 15px;
+  color: #1d3b54;
+  text-transform: uppercase;
+}
+.header-search-submit {
+  float: right;
+  padding-left: 8px;
+  background: #338de6;
+  height: 100%;
+  width: 30px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.header-search-submit:hover {
+  background: red;
+}
+.header-search:hover .header-search-submit {
+  background: #2c7ed0;
+}
+.header-search:hover .header-search-submit:hover {
+  background: #2773be;
+}
+.header-inner {
+  display: table;
+  padding: 75px 0;
+  position: relative;
+}
+.header-inner:before {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #d0dae4;
+}
+.header-inner .inner-col {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header-inner .inner-col.first-inner-col {
+  padding-bottom: 5px;
+  width: 40%;
+  border-right: 3px solid #ffffff;
+}
+.header-inner .inner-col.second-inner-col {
+  padding-left: 30px;
+}
+.header-inner h1 {
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.header-inner p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer-holder {
+  position: relative;
+  padding-bottom: 12px;
+  border-top: 20px solid #7cc6e0;
+  background-size: cover;
+  background-image: url(../img/bg/footer.jpg);
+}
+.footer-holder:before {
+  content: '';
+  height: 12px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(36, 119, 189, 0.5);
+}
+.footer-content {
+  padding: 40px 0 20px;
+  border-bottom: 1px solid #98b7cb;
+}
+.footer-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-content p {
+  float: left;
+  width: 650px;
+  font-family: "Kiro Light";
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.footer-content .social {
+  float: right;
+  margin-top: -5px;
+}
+.footer-content .social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.footer-links {
+  padding: 5px 10px 7px;
+  float: left;
+  display: table;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.footer-links-item {
+  padding: 0 8px;
+  display: table-cell;
+  font-family: "Kiro Extra Light";
+  font-size: 20px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.footer-links-item img {
+  margin-bottom: -3px;
+  margin-right: 5px;
+}
+.footer-copyright {
+  font-family: "Kiro Light";
+  font-size: 12px;
+  color: #8ebfe7;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.footer-copyright:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-copyright-left {
+  float: left;
+}
+.footer-copyright-right {
+  float: right;
+}
+
 /* Pages */

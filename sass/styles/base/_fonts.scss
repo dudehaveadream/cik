@@ -1,4 +1,14 @@
 @font-face {
+    font-family: 'Socialico';
+    src: url('../fonts/Socialico.eot');
+    src: url('../fonts/Socialico.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Socialico.woff') format('woff'),
+         url('../fonts/Socialico.ttf') format('truetype'),
+         url('../fonts/Socialico.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Kiro Extra Light Italic';
     src: url('../fonts/Kiro Extra Light Italic.eot');
     src: url('../fonts/Kiro Extra Light Italic.eot?#iefix') format('embedded-opentype'),

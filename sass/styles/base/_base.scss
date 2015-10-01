@@ -4,25 +4,31 @@ $light: 'Kiro Light';
 $regular: 'Kiro Regular';
 $bold: 'Kiro Bold';
 
+$social: 'Socialico';
+
+$black: #000000;
+$white: #ffffff;
+$blue: #49657c;
+$light_blue: #79d7f8;
+
 
 body {
-  font-size: 14px;
-  font-family: $regular;
+	font-family: $regular;
+}
+h1 {
+	font-size: 58px;
 }
 
 
-::-webkit-input-placeholder {
-  color: #999999;
-}
-
-::-moz-placeholder {
-  color: #999999;
-}
-
-:-moz-placeholder {
-  color: #999999;
-}
-
-:-ms-input-placeholder {
-  color: #999999;
+.social {
+	font-family: $social;
+	a {
+		font-size: 40px;
+		color: $white;
+		text-decoration: none;
+		@include transition (all, 0.2s, linear);
+		&:hover {
+			color: $light_blue;
+		}
+	}
 }

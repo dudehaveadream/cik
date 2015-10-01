@@ -1,0 +1,72 @@
+.footer {
+	&-holder {
+		position: relative;
+		padding-bottom: 12px;
+		border-top: 20px solid #7cc6e0;
+		background-size: cover;
+		background-image: url(../img/bg/footer.jpg);
+		&:before {
+			content: '';
+			height: 12px;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: rgba(36, 119, 189, .5);
+		}
+	}
+	&-content {
+		padding: 40px 0 20px;
+		border-bottom: 1px solid #98b7cb;
+		@include clearfix;
+		p {
+			float: left;
+			width: 650px;
+			font-family: $light;
+			font-size: 20px;
+			line-height: 1.2;
+			color: $white;
+		}
+		.social {
+			float: right;
+			margin-top: -5px;
+			a {
+				display: inline-block;
+				margin: 0 5px;
+			}
+		}
+	}
+	&-links {
+		padding: 5px 10px 7px;
+		float: left;
+		display: table;
+		border: 1px solid $white;
+		@include border-radius(4px);
+		&-item {
+			padding: 0 8px;
+			display: table-cell;
+			font-family: $extra_light;
+			font-size: 20px;
+			vertical-align: middle;
+			color: $white;
+			img {
+				margin-bottom: -3px;
+				margin-right: 5px;
+			}
+		}
+	}
+	&-copyright {
+		font-family: $light;
+		font-size: 12px;
+		color: #8ebfe7;
+		text-transform: uppercase;
+		padding: 15px 0;
+		@include clearfix;
+		&-left {
+			float: left;
+		}
+		&-right {
+			float: right;
+		}
+	}
+}
