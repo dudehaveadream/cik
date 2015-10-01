@@ -57,8 +57,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*Mixins*/
+@font-face {
+  font-family: 'Kiro Extra Light Italic';
+  src: url("../fonts/Kiro Extra Light Italic.eot");
+  src: url("../fonts/Kiro Extra Light Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Extra Light Italic.woff") format("woff"), url("../fonts/Kiro Extra Light Italic.ttf") format("truetype"), url("../fonts/Kiro Extra Light Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kiro Extra Light';
+  src: url("../fonts/Kiro Extra Light.eot");
+  src: url("../fonts/Kiro Extra Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Extra Light.woff") format("woff"), url("../fonts/Kiro Extra Light.ttf") format("truetype"), url("../fonts/Kiro Extra Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kiro Light';
+  src: url("../fonts/Kiro Light.eot");
+  src: url("../fonts/Kiro Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Light.woff") format("woff"), url("../fonts/Kiro Light.ttf") format("truetype"), url("../fonts/Kiro Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kiro Regular';
+  src: url("../fonts/Kiro Regular.eot");
+  src: url("../fonts/Kiro Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Regular.woff") format("woff"), url("../fonts/Kiro Regular.ttf") format("truetype"), url("../fonts/Kiro Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kiro Bold';
+  src: url("../fonts/Kiro Bold.eot");
+  src: url("../fonts/Kiro Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Kiro Bold.woff") format("woff"), url("../fonts/Kiro Bold.ttf") format("truetype"), url("../fonts/Kiro Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-size: 14px;
+  font-family: "Kiro Regular";
 }
 
 ::-webkit-input-placeholder {

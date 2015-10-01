@@ -1,6 +1,15 @@
+$extra_light_italic: 'Kiro Extra Light Italic';
+$extra_light: 'Kiro Extra Light';
+$light: 'Kiro Light';
+$regular: 'Kiro Regular';
+$bold: 'Kiro Bold';
+
+
 body {
   font-size: 14px;
+  font-family: $regular;
 }
+
 
 ::-webkit-input-placeholder {
   color: #999999;
