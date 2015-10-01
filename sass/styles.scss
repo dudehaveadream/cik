@@ -5,12 +5,9 @@
 @import "styles/base/variables";
 @import "styles/base/base";
 
-/* Components */
-
 /* Layout */
 @import "styles/layout/header";
 @import "styles/layout/footer";
 
-/* Pages */
-
-
+@import "styles/layout/lists";
+@import "styles/layout/partners";

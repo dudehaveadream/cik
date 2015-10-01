@@ -45,11 +45,16 @@
 		.social {
 			float: right;
 			a {
+				height: 40px;
 				display: inline-block;
-				padding: 0 4px;
+				padding: 4px;
 				margin: 0 3px;
 				border: 1px solid $white;
 				@include border-radius(50%);
+				span {
+					line-height: 30px;
+					display: block;
+				}
 				&:hover {
 					border-color: $light_blue;
 				}

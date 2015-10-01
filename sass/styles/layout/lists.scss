@@ -1,0 +1,48 @@
+.lists {
+	padding: 60px 0 40px;
+	.first-row {
+		margin-bottom: 30px;
+	}
+	&-inner {
+		padding: 35px 20px 20px;
+		background: #f7f7f7;
+		border: 1px solid #c0c5ca;
+		@include border-radius(4px);
+		h4 {
+			padding-bottom: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #a8b7c3;
+		}
+	}
+	ul {
+		li {
+			display: block;
+			border-bottom: 1px dashed #dadddf;
+			&:last-child {
+				border-bottom: none;
+			}
+			.list-item {
+				padding: 10px;
+				margin-left: -10px;
+				margin-right: -10px;
+				@include transition (all, 0.2s, linear);
+				@include clearfix;
+				&:hover {
+					background: #c7effd;
+				}
+			}
+			.name {
+				display: inline-block;
+				font-family: $light;
+				font-size: 24px;
+				color: #446078;
+				cursor: default;
+				line-height: 1.3;
+			}
+			.btn-holder {
+				float: right;
+			}
+		}
+	}
+}

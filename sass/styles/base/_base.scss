@@ -8,27 +8,95 @@ $social: 'Socialico';
 
 $black: #000000;
 $white: #ffffff;
-$blue: #49657c;
+$blue: #1f5a8b;
 $light_blue: #79d7f8;
 
 
 body {
 	font-family: $regular;
+	background-image: url(../img/bg/main.jpg);
+	background-position: center;
 }
 h1 {
 	font-size: 58px;
+}
+h2 {
+	font-size: 40px;
+	color: $blue;
+}
+h3 {
+	font-size: 36px;
+	color: $blue;
+}
+h4 {
+	font-size: 30px;
+	color: $blue;
 }
 
 
 .social {
 	font-family: $social;
 	a {
+		vertical-align: middle;
 		font-size: 40px;
 		color: $white;
 		text-decoration: none;
 		@include transition (all, 0.2s, linear);
+		span {
+			vertical-align: middle;
+		}
 		&:hover {
 			color: $light_blue;
 		}
+	}
+}
+
+.content-title {
+	display: table;
+	width: 100%;
+	&-item {
+		display: table-cell;
+		vertical-align: top;
+	}
+}
+
+.btn-code {
+	display: inline-block;
+	height: 32px;
+	padding: 0 10px;
+	font-family: $bold;
+	font-size: 17px;
+	text-decoration: none !important;
+	overflow: hidden;
+    background: #5ca0cf;
+    background: -moz-linear-gradient(bottom, #5599c9 0%, #589ccc 25%, #5ca0cf 50%, #64a5d1 75%, #66a7d2 100%);
+    background: -webkit-linear-gradient(bottom, #5599c9 0%, #589ccc 25%, #5ca0cf 50%, #64a5d1 75%, #66a7d2 100%);
+    background: -o-linear-gradient(bottom, #5599c9 0%, #589ccc 25%, #5ca0cf 50%, #64a5d1 75%, #66a7d2 100%);
+    background: -ms-linear-gradient(bottom, #5599c9 0%, #589ccc 25%, #5ca0cf 50%, #64a5d1 75%, #66a7d2 100%);
+    background: linear-gradient(bottom, #5599c9 0%, #589ccc 25%, #5ca0cf 50%, #64a5d1 75%, #66a7d2 100%);
+	@include border-radius(2px);
+	.text {
+		display: inline-block;
+		padding-top: 6px;
+		padding-right: 8px;
+		color: $white;
+	}
+	.count {
+		display: inline-block;
+		padding: 6px 5px 0;
+		color: #233241;
+		background: #72d5f8;
+		height: 100%;
+	}
+	.icon {
+		padding-left: 8px;
+	}
+	&:hover {
+	    background: #5ca0cf;
+	    background: -moz-linear-gradient(bottom, #326f97 0%, #3879a3 25%, #4283ae 50%, #4a8bb6 75%, #5d9fca 100%);
+	    background: -webkit-linear-gradient(bottom, #326f97 0%, #3879a3 25%, #4283ae 50%, #4a8bb6 75%, #5d9fca 100%);
+	    background: -o-linear-gradient(bottom, #326f97 0%, #3879a3 25%, #4283ae 50%, #4a8bb6 75%, #5d9fca 100%);
+	    background: -ms-linear-gradient(bottom, #326f97 0%, #3879a3 25%, #4283ae 50%, #4a8bb6 75%, #5d9fca 100%);
+	    background: linear-gradient(bottom, #326f97 0%, #3879a3 25%, #4283ae 50%, #4a8bb6 75%, #5d9fca 100%);
 	}
 }
