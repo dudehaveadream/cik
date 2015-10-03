@@ -44,6 +44,19 @@
 				background: #8babcf;
 			}
 		}
+		@media #{$mobile} {
+			display: block;
+			span {
+				position: static;
+				display: block;
+				margin-left: 0;
+				margin-top: 15px;
+				width: 100%;
+				&:after {
+					content: none;
+				}
+			}
+		}
 	}
 	&-inner {
 		text-align: center;
@@ -52,6 +65,11 @@
 			margin: 0 14px;
 			img {
 				vertical-align: middle;
+			}
+		}
+		@media #{$tablet} {
+			.item {
+				margin: 5px 14px;
 			}
 		}
 	}

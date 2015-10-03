@@ -1,24 +1,30 @@
 /*
-Error: Undefined variable: "$light_italic".
-        on line 9 of D:/web/proj/cik/sass/styles/layout/code-list.scss
+Error: Undefined variable: "$tablet".
+        on line 7 of D:/web/proj/cik/sass/styles/layout/code-list.scss
 
+2: 	background: #f5f5f4;
+3: 	border-top: 1px solid #d8dce1;
 4: 	border-bottom: 1px solid #afc5d7;
 5: 	h5 {
 6: 		margin-bottom: 12px;
-7: 	}
-8: 	.phone {
-9: 		font-family: $light_italic;
-10: 		font-size: 19px;
-11: 		color: #14799c;
-12: 		span {
-13: 			margin: 0 8px;
-14: 		}
+7: 		@media #{$tablet} {
+8: 			margin-top: 20px;
+9: 		}
+10: 	}
+11: 	.phone {
+12: 		font-family: $light_italic;
 
 Backtrace:
-D:/web/proj/cik/sass/styles/layout/code-list.scss:9
+D:/web/proj/cik/sass/styles/layout/code-list.scss:7
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/interpolation.rb:100:in `_perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:537:in `block in run_interp_no_strip'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:535:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:535:in `run_interp_no_strip'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:542:in `run_interp'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:510:in `visit_media'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
@@ -80,4 +86,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light_italic\".\A         on line 9 of D:/web/proj/cik/sass/styles/layout/code-list.scss\A \A 4: 	border-bottom: 1px solid #afc5d7;\A 5: 	h5 {\A 6: 		margin-bottom: 12px;\A 7: 	}\A 8: 	.phone {\A 9: 		font-family: $light_italic;\A 10: 		font-size: 19px;\A 11: 		color: #14799c;\A 12: 		span {\A 13: 			margin: 0 8px;\A 14: 		}"; }
+  content: "Error: Undefined variable: \"$tablet\".\A         on line 7 of D:/web/proj/cik/sass/styles/layout/code-list.scss\A \A 2: 	background: #f5f5f4;\A 3: 	border-top: 1px solid #d8dce1;\A 4: 	border-bottom: 1px solid #afc5d7;\A 5: 	h5 {\A 6: 		margin-bottom: 12px;\A 7: 		@media #{$tablet} {\A 8: 			margin-top: 20px;\A 9: 		}\A 10: 	}\A 11: 	.phone {\A 12: 		font-family: $light_italic;"; }

@@ -1,28 +1,29 @@
 /*
-Error: Undefined mixin 'border-radius'.
-        on line 10 of D:/web/proj/cik/sass/styles/layout/lists.scss, in `border-radius'
-        from line 10 of D:/web/proj/cik/sass/styles/layout/lists.scss
+Error: Undefined variable: "$tablet".
+        on line 5 of D:/web/proj/cik/sass/styles/layout/lists.scss
 
-5: 	}
-6: 	&-inner {
-7: 		padding: 35px 20px 20px;
-8: 		background: #f7f7f7;
-9: 		border: 1px solid #c0c5ca;
-10: 		@include border-radius(4px);
-11: 		h4 {
-12: 			padding-bottom: 20px;
-13: 			text-align: center;
-14: 			margin-bottom: 20px;
-15: 			border-bottom: 1px solid #a8b7c3;
+1: .lists {
+2: 	padding: 60px 0 40px;
+3: 	.first-row {
+4: 		margin-bottom: 30px;
+5: 		@media #{$tablet} {
+6: 			margin-bottom: 0;
+7: 		}
+8: 	}
+9: 	&-inner {
+10: 		padding: 35px 20px 20px;
 
 Backtrace:
-D:/web/proj/cik/sass/styles/layout/lists.scss:10:in `border-radius'
-D:/web/proj/cik/sass/styles/layout/lists.scss:10
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
+D:/web/proj/cik/sass/styles/layout/lists.scss:5
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/interpolation.rb:100:in `_perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:537:in `block in run_interp_no_strip'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:535:in `map'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:535:in `run_interp_no_strip'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:542:in `run_interp'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:510:in `visit_media'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
@@ -84,4 +85,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 10 of D:/web/proj/cik/sass/styles/layout/lists.scss, in `border-radius'\A         from line 10 of D:/web/proj/cik/sass/styles/layout/lists.scss\A \A 5: 	}\A 6: 	&-inner {\A 7: 		padding: 35px 20px 20px;\A 8: 		background: #f7f7f7;\A 9: 		border: 1px solid #c0c5ca;\A 10: 		@include border-radius(4px);\A 11: 		h4 {\A 12: 			padding-bottom: 20px;\A 13: 			text-align: center;\A 14: 			margin-bottom: 20px;\A 15: 			border-bottom: 1px solid #a8b7c3;"; }
+  content: "Error: Undefined variable: \"$tablet\".\A         on line 5 of D:/web/proj/cik/sass/styles/layout/lists.scss\A \A 1: .lists {\A 2: 	padding: 60px 0 40px;\A 3: 	.first-row {\A 4: 		margin-bottom: 30px;\A 5: 		@media #{$tablet} {\A 6: 			margin-bottom: 0;\A 7: 		}\A 8: 	}\A 9: 	&-inner {\A 10: 		padding: 35px 20px 20px;"; }

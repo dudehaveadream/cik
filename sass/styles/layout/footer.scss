@@ -35,6 +35,22 @@
 				margin: 0 5px;
 			}
 		}
+		@media #{$desktop} {
+			.social {
+				margin-top: 5px;
+			}
+		}
+		@media #{$mobile} {
+			p {
+				float: none;
+				width: 100%;
+			}
+			.social {
+				width: 100%;
+				float: none;
+				text-align: center;
+			}
+		}
 	}
 	&-links {
 		padding: 5px 10px 7px;
@@ -54,6 +70,13 @@
 				margin-right: 5px;
 			}
 		}
+		@media #{$desktop} {
+			margin-top: 10px;
+		}
+		@media #{$mobile} {
+			float: none;
+			margin: 10px auto 0;
+		}
 	}
 	&-copyright {
 		font-family: $light;
@@ -67,6 +90,15 @@
 		}
 		&-right {
 			float: right;
+		}
+		@media #{$mobile} {
+			text-align: center;
+			&-left, &-right {
+				float: none;
+			}
+			&-left {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }

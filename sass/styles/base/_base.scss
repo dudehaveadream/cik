@@ -66,6 +66,12 @@ h5 {
 		display: table-cell;
 		vertical-align: top;
 	}
+	@media #{$mobile} {
+		&-item {
+			display: block;
+			margin-top: 15px;
+		}
+	}
 }
 
 .btn-code {
@@ -97,7 +103,9 @@ h5 {
 		height: 100%;
 	}
 	.icon {
+		float: right;
 		padding-left: 8px;
+		padding-top: 6px;
 	}
 	&:hover {
 	    background: #5ca0cf;
