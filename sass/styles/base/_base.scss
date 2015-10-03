@@ -1,5 +1,6 @@
 $extra_light_italic: 'Kiro Extra Light Italic';
 $extra_light: 'Kiro Extra Light';
+$light_italic: 'Kiro Light Italic';
 $light: 'Kiro Light';
 $regular: 'Kiro Regular';
 $bold: 'Kiro Bold';
@@ -27,9 +28,16 @@ h2 {
 h3 {
 	font-size: 36px;
 	color: $blue;
+	&.light {
+		font-family: $extra_light;
+	}
 }
 h4 {
 	font-size: 30px;
+	color: $blue;
+}
+h5 {
+	font-size: 20px;
 	color: $blue;
 }
 

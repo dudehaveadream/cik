@@ -29,6 +29,16 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'Kiro Light Italic';
+    src: url('../fonts/Kiro Light Italic.eot');
+    src: url('../fonts/Kiro Light Italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kiro Light Italic.woff') format('woff'),
+         url('../fonts/Kiro Light Italic.ttf') format('truetype'),
+         url('../fonts/Kiro Light Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Kiro Light';
     src: url('../fonts/Kiro Light.eot');
     src: url('../fonts/Kiro Light.eot?#iefix') format('embedded-opentype'),
