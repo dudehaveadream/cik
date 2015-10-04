@@ -5,6 +5,9 @@
 		background-size: cover;
 		background-position: center;
 		border-bottom: 30px solid #d0dae4;
+		&.header-1 {
+			background-image: url(../img/bg/header1.jpg);
+		}
 		&.header-2 {
 			background-image: url(../img/bg/header2.jpg);
 		}

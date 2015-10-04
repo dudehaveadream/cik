@@ -139,10 +139,6 @@ h5 {
   color: #1f5a8b;
 }
 
-.boxes {
-  padding: 50px 0;
-}
-
 .social {
   font-family: "Socialico";
 }
@@ -232,6 +228,9 @@ h5 {
   background-size: cover;
   background-position: center;
   border-bottom: 30px solid #d0dae4;
+}
+.header-holder.header-1 {
+  background-image: url(../img/bg/header1.jpg);
 }
 .header-holder.header-2 {
   background-image: url(../img/bg/header2.jpg);
@@ -1595,4 +1594,8 @@ h5 {
   padding: 3px 10px;
   background: #f1f1f0;
   border: 1px solid #b6cde0;
+}
+
+.categories {
+  padding: 50px 0;
 }

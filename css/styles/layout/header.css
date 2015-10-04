@@ -9,7 +9,7 @@ Error: Undefined variable: "$white".
 5: 		background-size: cover;
 6: 		background-position: center;
 7: 		border-bottom: 30px solid #d0dae4;
-8: 		&.header-2 {
+8: 		&.header-1 {
 
 Backtrace:
 D:/web/proj/cik/sass/styles/layout/header.scss:3
@@ -77,4 +77,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 3 of D:/web/proj/cik/sass/styles/layout/header.scss\A \A 1: .header {\A 2: 	&-holder {\A 3: 		color: $white;\A 4: 		background: #e3e3e3;\A 5: 		background-size: cover;\A 6: 		background-position: center;\A 7: 		border-bottom: 30px solid #d0dae4;\A 8: 		&.header-2 {"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 3 of D:/web/proj/cik/sass/styles/layout/header.scss\A \A 1: .header {\A 2: 	&-holder {\A 3: 		color: $white;\A 4: 		background: #e3e3e3;\A 5: 		background-size: cover;\A 6: 		background-position: center;\A 7: 		border-bottom: 30px solid #d0dae4;\A 8: 		&.header-1 {"; }
