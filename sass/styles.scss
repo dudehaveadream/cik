@@ -1,4 +1,4 @@
-/* Base stuff */
+/* Base */
 @import "styles/base/reset";
 @import "styles/base/mixins";
 @import "styles/base/fonts";
@@ -8,9 +8,14 @@
 /* Layout */
 @import "styles/layout/header";
 @import "styles/layout/footer";
+@import "styles/layout/partners";
 
+/* Index */
 @import "styles/layout/search";
 @import "styles/layout/code-list";
 @import "styles/layout/lists";
 @import "styles/layout/articles";
-@import "styles/layout/partners";
+
+/* Second */
+@import "styles/layout/slider.scss";
+@import "styles/layout/range.scss";
