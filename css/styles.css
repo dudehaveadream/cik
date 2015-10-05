@@ -168,10 +168,13 @@ h5 {
   display: table-cell;
   vertical-align: top;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .content-title-item {
     display: block;
     margin-top: 15px;
+  }
+  .content-title-item img {
+    max-width: 100%;
   }
 }
 
@@ -1452,6 +1455,36 @@ h5 {
   background: #ffffff;
   border: 2px dashed #1b5f98;
 }
+@media only screen and (max-width: 1199px) {
+  .range-top-type .item {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .range-top-type .item {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .range-top-type .item-inner {
+    display: inline-block;
+  }
+  .range-top-type .item-first, .range-top-type .item-second {
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .range-top-title {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .range-top-type {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
 .range-inner {
   padding: 45px 0;
   border-bottom: 1px solid #c2d9ec;
@@ -1492,6 +1525,26 @@ h5 {
   font-size: 51px;
   color: #4f9bb6;
   margin-left: 25px;
+}
+@media only screen and (max-width: 1199px) {
+  .range-inner .slider.slider-horizontal {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .range-inner .slider.slider-horizontal {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .range-inner .slider.slider-horizontal {
+    width: 100%;
+  }
+  .range-inner #range-big-val-label {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 .range-open, .range-close {
   padding: 12px 0;
@@ -1594,6 +1647,34 @@ h5 {
   padding: 3px 10px;
   background: #f1f1f0;
   border: 1px solid #b6cde0;
+}
+@media only screen and (max-width: 1199px) {
+  .range-list-item .slider.slider-horizontal {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .range-list-item .slider.slider-horizontal {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .range-list-item {
+    margin-bottom: 35px;
+  }
+  .range-list-item .name {
+    display: block;
+    text-align: center;
+  }
+  .range-list-item .slider.slider-horizontal {
+    width: 100%;
+  }
+  .range-list-item .range-small-val-label {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .categories {
@@ -1739,6 +1820,18 @@ h5 {
   font-style: 14px;
   color: #374c5d;
 }
+@media only screen and (max-width: 767px) {
+  .charts-inner .progress {
+    width: calc(100% - 50px);
+  }
+  .charts-inner .progress-name {
+    width: 100%;
+    float: none;
+  }
+  .charts-inner .progress-value {
+    width: 50px;
+  }
+}
 .charts-items {
   padding: 0 35px;
 }
@@ -1785,6 +1878,11 @@ h5 {
 }
 .charts-items-single.color12 .progress-bar {
   background: #ee4464;
+}
+@media only screen and (max-width: 767px) {
+  .charts-items-single:last-child {
+    margin-bottom: 25px;
+  }
 }
 .charts-bordered {
   border-right: 1px solid #adbfce;
