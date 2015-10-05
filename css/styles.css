@@ -1691,3 +1691,101 @@ h5 {
   left: 100%;
   margin-left: 8px;
 }
+
+.charts {
+  padding-bottom: 50px;
+}
+.charts .content-title {
+  margin-bottom: 30px;
+}
+.charts-inner {
+  padding: 35px 0;
+  background: #f6f6f6;
+  border: 1px solid #b9c1c8;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.charts-inner .progress {
+  height: 12px;
+  width: 110px;
+  float: left;
+  margin-top: 4px;
+  margin-bottom: 0;
+  box-shadow: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.charts-inner .progress-bar {
+  box-shadow: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.charts-inner .progress-name {
+  font-family: "Kiro Bold";
+  font-size: 17px;
+  color: #3d5467;
+  width: 135px;
+  float: left;
+}
+.charts-inner .progress-value {
+  float: right;
+  font-family: "Kiro Light";
+  font-style: 14px;
+  color: #374c5d;
+}
+.charts-items {
+  padding: 0 35px;
+}
+.charts-items-single {
+  margin-bottom: 25px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.charts-items-single:last-child {
+  margin-bottom: 0;
+}
+.charts-items-single.color1 .progress-bar {
+  background: #7695af;
+}
+.charts-items-single.color2 .progress-bar {
+  background: #61e7b3;
+}
+.charts-items-single.color3 .progress-bar {
+  background: #e4788d;
+}
+.charts-items-single.color4 .progress-bar {
+  background: #f2b636;
+}
+.charts-items-single.color5 .progress-bar {
+  background: #7ec134;
+}
+.charts-items-single.color6 .progress-bar {
+  background: #cb8353;
+}
+.charts-items-single.color7 .progress-bar {
+  background: #de8c2c;
+}
+.charts-items-single.color8 .progress-bar {
+  background: #ac77a9;
+}
+.charts-items-single.color9 .progress-bar {
+  background: #48c396;
+}
+.charts-items-single.color10 .progress-bar {
+  background: #638fc6;
+}
+.charts-items-single.color11 .progress-bar {
+  background: #f2b636;
+}
+.charts-items-single.color12 .progress-bar {
+  background: #ee4464;
+}
+.charts-bordered {
+  border-right: 1px solid #adbfce;
+}

@@ -1,0 +1,112 @@
+.charts {
+	padding-bottom: 50px;
+	.content-title {
+		margin-bottom: 30px;
+	}
+	&-inner {
+		padding: 35px 0;
+		background: #f6f6f6;
+		border: 1px solid #b9c1c8;
+		@include border-radius(4px);
+		@include box-shadow(0 3px 0 rgba(0,0,0,.1));
+		.progress {
+			height: 12px;
+			width: 110px;
+			float: left;
+			margin-top: 4px;
+			margin-bottom: 0;
+			box-shadow: none;
+			@include border-radius(3px);
+			&-bar {
+				box-shadow: none;
+				@include border-radius(3px);
+			}
+			&-name {
+				font-family: $bold;
+				font-size: 17px;
+				color: #3d5467;
+				width: 135px;
+				float: left;
+			}
+			&-value {
+				float: right;
+				font-family: $light;
+				font-style: 14px;
+				color: #374c5d;
+			}
+		}
+	}
+	&-items {
+		padding: 0 35px;
+		&-single {
+			margin-bottom: 25px;
+			@include clearfix;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&.color1 {
+				.progress-bar {
+					background: #7695af;
+				}
+			}
+			&.color2 {
+				.progress-bar {
+					background: #61e7b3;
+				}
+			}
+			&.color3 {
+				.progress-bar {
+					background: #e4788d;
+				}
+			}
+			&.color4 {
+				.progress-bar {
+					background: #f2b636;
+				}
+			}
+			&.color5 {
+				.progress-bar {
+					background: #7ec134;
+				}
+			}
+			&.color6 {
+				.progress-bar {
+					background: #cb8353;
+				}
+			}
+			&.color7 {
+				.progress-bar {
+					background: #de8c2c;
+				}
+			}
+			&.color8 {
+				.progress-bar {
+					background: #ac77a9;
+				}
+			}
+			&.color9 {
+				.progress-bar {
+					background: #48c396;
+				}
+			}
+			&.color10 {
+				.progress-bar {
+					background: #638fc6;
+				}
+			}
+			&.color11 {
+				.progress-bar {
+					background: #f2b636;
+				}
+			}
+			&.color12 {
+				.progress-bar {
+					background: #ee4464;
+				}
+			}
+		}
+	}
+	&-bordered {
+		border-right: 1px solid #adbfce;
+	}
+}
